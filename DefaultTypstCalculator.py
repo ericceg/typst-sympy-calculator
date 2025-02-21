@@ -216,6 +216,10 @@ def get_default_calculator(calculator: TypstCalculator = None, complex_number: b
         return sympy.log(expr)
 
     @func()
+    def convert_exp(expr):
+        return sympy.exp(expr)
+
+    @func()
     def convert_max(*args):
         return sympy.Max(*args)
 
